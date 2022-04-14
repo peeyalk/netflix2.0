@@ -1,16 +1,16 @@
 {
   "files": {
     "main.css": "./static/css/main.fc3a7843.css",
-    "main.js": "./static/js/main.79a3c553.js",
+    "main.js": "./static/js/main.575bb474.js",
     "static/media/loginScreenBackground.jpeg": "./static/media/loginScreenBackground.94e5756b639d9cd1c443.jpeg",
     "static/media/netflix_logo.png": "./static/media/netflix_logo.774e8c1632ac9433608b.png",
     "static/media/no1MovieToday.svg": "./static/media/no1MovieToday.d523ef437a399671091453c495a2b3cb.svg",
     "index.html": "./index.html",
     "main.fc3a7843.css.map": "./static/css/main.fc3a7843.css.map",
-    "main.79a3c553.js.map": "./static/js/main.79a3c553.js.map"
+    "main.575bb474.js.map": "./static/js/main.575bb474.js.map"
   },
   "entrypoints": [
     "static/css/main.fc3a7843.css",
-    "static/js/main.79a3c553.js"
+    "static/js/main.575bb474.js"
   ]
 }
