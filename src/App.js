@@ -52,7 +52,6 @@ function App() {
         ) : (
           <>
             <Route path='/' element={<HomeScreen />} />
-            <Route path='*' element={<HomeScreen />} />
           </>
         )}
       </Routes>
