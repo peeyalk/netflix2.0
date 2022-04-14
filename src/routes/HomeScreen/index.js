@@ -16,7 +16,8 @@ function HomeScreen() {
   useEffect(() => {
     const getGenres = async () => {
       const res = await axios.get(requestsAPIs.fetchGeneres);
-      setGenres(res.data.genres.sort((a, b) => 0.5 - Math.random()));
+      // setGenres(res.data.genres.sort((a, b) => 0.5 - Math.random()));
+      setGenres(res.data.genres);
       return res;
     };
 

@@ -9,7 +9,7 @@ function row({ title, fetchUrl, isLargeRow = false }) {
   useEffect(() => {
     const fetchMovies = async () => {
       const res = await axios.get(fetchUrl);
-      setMovies(res.data.results.sort((a, b) => 0.5 - Math.random()));
+      setMovies(res.data.results);
       return res;
     };
     fetchMovies();

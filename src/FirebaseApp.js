@@ -5,7 +5,6 @@ import { getFirestore } from 'firebase/firestore';
 import { getStorage } from 'firebase/storage';
 import {
   getAuth,
-  onAuthStateChanged,
   createUserWithEmailAndPassword,
 } from 'firebase/auth';
 
@@ -35,11 +34,10 @@ export const auth = getAuth(app);
  * Call this from the root of the APP ie. App.js
  * @param {firebase getAuth()} auth
  * @param {function} callback (authenticatedUser)
- */
-
-onAuthStateChanged(auth, (authenticatedUser) => {
-  // return authenticatedUser;
-});
+  onAuthStateChanged(auth, (authenticatedUser) => {
+    // return authenticatedUser;
+  });
+*/
 
 export const registerUserWithEmailAndPassword = (regEmail, regPassword) => {
   return createUserWithEmailAndPassword(auth, regEmail, regPassword)

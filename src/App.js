@@ -1,5 +1,5 @@
 import React, { useEffect } from 'react';
-import { shallowEqual, useDispatch } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { Route, Routes } from 'react-router';
 import { onAuthStateChanged } from 'firebase/auth';
 import { auth } from './FirebaseApp';

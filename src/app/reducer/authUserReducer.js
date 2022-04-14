@@ -9,7 +9,7 @@ const authUserReducer = createSlice({
     loginDispatchAction: (state, action) => {
       state.authUser = action.payload;
     },
-    logoutDispatchAction: (state, action) => {
+    logoutDispatchAction: (state) => {
       state.authUser = null;
     },
   },

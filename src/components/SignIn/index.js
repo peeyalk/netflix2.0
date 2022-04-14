@@ -18,7 +18,7 @@ function SignIn() {
       email.current.value,
       password.current.value
     )
-      .then((res) => {
+      .then(() => {
       })
       .catch((err) => {
         console.log('login', err);
@@ -34,7 +34,7 @@ function SignIn() {
       email.current.value,
       password.current.value
     )
-      .then((res) => {
+      .then(() => {
         // console.log('sign in', JSON.stringify(res));
       })
       .catch((err) => {
