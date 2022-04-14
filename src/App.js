@@ -12,6 +12,7 @@ import {
   selectAuthUser,
 } from './app/reducer/authUserReducer';
 import { useSelector } from 'react-redux';
+import ProfileScreen from './routes/ProfileScreen';
 
 function App() {
   const dispatch = useDispatch();
@@ -33,12 +34,13 @@ function App() {
           })
         );
       } else {
-        dispatch(logoutDispatchAction);
+        dispatch(logoutDispatchAction());
       }
     });
 
     return unsubscribe;
-  }, []);
+  }, [dispatch]);
+
   return (
     <div className='App'>
       <Routes>
@@ -51,7 +53,8 @@ function App() {
           </>
         ) : (
           <>
-            <Route path='/' element={<HomeScreen />} />
+            <Route path='/edit_profile' element={<ProfileScreen />} />
+            <Route exact path='/' element={<HomeScreen />} />
           </>
         )}
       </Routes>
