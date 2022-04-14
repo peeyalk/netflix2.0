@@ -1,6 +1,6 @@
 import { useSelector } from 'react-redux';
 import { useNavigate } from 'react-router';
-import { selectAuthUser } from '../../app/reducer/authUserReducer';
+import { selectAuthUser } from '../../redux/authUserReducer';
 import Nav from '../../components/Navbar';
 import { auth } from '../../FirebaseApp';
 import './index.css';

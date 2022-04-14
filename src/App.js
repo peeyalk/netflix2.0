@@ -10,9 +10,10 @@ import {
   loginDispatchAction,
   logoutDispatchAction,
   selectAuthUser,
-} from './app/reducer/authUserReducer';
+} from './redux/authUserReducer';
 import { useSelector } from 'react-redux';
 import ProfileScreen from './routes/ProfileScreen';
+// import { store } from './app/store';
 
 function App() {
   const dispatch = useDispatch();
@@ -22,17 +23,7 @@ function App() {
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (authUser) => {
       if (authUser) {
-        dispatch(
-          loginDispatchAction({
-            uid: authUser.uid,
-            email: authUser.email,
-            refreshToken: authUser.stsTokenManager.refreshToken,
-            accessToken: authUser.stsTokenManager.accessToken,
-            expirationTime: authUser.stsTokenManager.expirationTime,
-            createdAt: authUser.createdAt,
-            lastLoginAt: authUser.lastLoginAt,
-          })
-        );
+        dispatch(loginDispatchAction(makeAuthUserFromFirebase(authUser)));
       } else {
         dispatch(logoutDispatchAction());
       }
@@ -61,5 +52,17 @@ function App() {
     </div>
   );
 }
+
+export const makeAuthUserFromFirebase = (authUser) => {
+  return {
+    uid: authUser.uid,
+    email: authUser.email,
+    refreshToken: authUser.stsTokenManager.refreshToken,
+    accessToken: authUser.stsTokenManager.accessToken,
+    expirationTime: authUser.stsTokenManager.expirationTime,
+    createdAt: authUser.createdAt,
+    lastLoginAt: authUser.lastLoginAt,
+  };
+};
 
 export default App;

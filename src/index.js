@@ -2,10 +2,10 @@ import React from 'react';
 import { createRoot } from 'react-dom/client';
 import './index.css';
 import App from './App';
-import { store } from './app/store';
 import { Provider } from 'react-redux';
 import * as serviceWorker from './serviceWorker';
 import { BrowserRouter } from 'react-router-dom';
+import { reduxStore } from './redux/reduxStore';
 
 const container = document.getElementById('root');
 const root = createRoot(container);
@@ -13,7 +13,7 @@ const root = createRoot(container);
 root.render(
   <BrowserRouter basename={process.env.PUBLIC_URL}>
     <React.StrictMode>
-      <Provider store={store}>
+      <Provider store={reduxStore}>
         <App />
       </Provider>
     </React.StrictMode>

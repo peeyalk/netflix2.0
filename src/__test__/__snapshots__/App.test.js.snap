@@ -1,0 +1,164 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Authenticated user should see the home page 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="homeScreen"
+    >
+      <div
+        class="nav false"
+      >
+        <div
+          class="nav__contents"
+        >
+          <img
+            alt="logo"
+            class="nav__logo"
+            src="https://upload.wikimedia.org/wikipedia/commons/7/7a/Logonetflix.png"
+          />
+          <img
+            alt="avatar"
+            class="nav__avatar"
+            src="https://avatars.githubusercontent.com/u/17343278?s=40&v=4"
+          />
+        </div>
+      </div>
+      <header
+        class="banner"
+        style="background-size: cover;"
+      >
+        <div
+          class="banner__contents"
+        >
+          <h1
+            class="banner__title"
+          />
+          <h2
+            class="banner__supplemental-message"
+          >
+            <img
+              src="no1MovieToday.svg"
+              style="margin-right: 15px;"
+            />
+            #1 in Movies Today
+          </h2>
+          <h1
+            class="banner__discription"
+          />
+          <div
+            class="banner__buttons"
+          >
+            <button
+              class="banner__button"
+            >
+              Play
+            </button>
+            <button
+              class="banner__button"
+            >
+              My List
+            </button>
+          </div>
+        </div>
+        <div
+          class="banner--fadeButtom"
+        />
+      </header>
+      <div
+        class="row"
+      >
+        <h2>
+          NETFLIX ORIGINAL
+        </h2>
+        <div
+          class="row__posters"
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <h2>
+          Trending Now
+        </h2>
+        <div
+          class="row__posters"
+        />
+      </div>
+      <div
+        class="row"
+      >
+        <h2>
+          Top Rated
+        </h2>
+        <div
+          class="row__posters"
+        />
+      </div>
+      <div
+        style="height: 40px;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;
+
+exports[`Unauthenticated user should see the login screen 1`] = `
+<DocumentFragment>
+  <div
+    class="App"
+  >
+    <div
+      class="loginScreen"
+    >
+      <div
+        class="loginScreen__background"
+      >
+        <img
+          alt="netflix2.0"
+          class="loginScreen__logo"
+          src="netflix_logo.png"
+        />
+        <button
+          class="loginScreen__button"
+        >
+          Sign In
+        </button>
+        <div
+          class="loginScreen__gradient"
+        />
+      </div>
+      <div
+        class="loginScreen__body"
+      >
+        <h1>
+          Unlimited movies, TV shows, and anime.
+        </h1>
+        <h2>
+          Watch anywhere. Cancel anytime.
+        </h2>
+        <h3>
+          Ready to watch? Enter your email to create or restart your membership.
+        </h3>
+        <div
+          class="loginScreen__input"
+        >
+          <form>
+            <input
+              placeholder="Email Address"
+              type="email"
+            />
+            <button
+              class="loginScreen__getStarted_btn"
+            >
+              Get Started
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</DocumentFragment>
+`;
