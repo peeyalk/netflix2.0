@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/netflix2.0/static/css/main.8c2b315b.css",
-    "main.js": "/netflix2.0/static/js/main.aba4450c.js",
-    "static/media/loginScreenBackground.jpeg": "/netflix2.0/static/media/loginScreenBackground.94e5756b639d9cd1c443.jpeg",
-    "static/media/netflix_logo.png": "/netflix2.0/static/media/netflix_logo.774e8c1632ac9433608b.png",
-    "static/media/no1MovieToday.svg": "/netflix2.0/static/media/no1MovieToday.d523ef437a399671091453c495a2b3cb.svg",
-    "index.html": "/netflix2.0/index.html",
-    "main.8c2b315b.css.map": "/netflix2.0/static/css/main.8c2b315b.css.map",
-    "main.aba4450c.js.map": "/netflix2.0/static/js/main.aba4450c.js.map"
+    "main.css": "./static/css/main.fc3a7843.css",
+    "main.js": "./static/js/main.90d752c7.js",
+    "static/media/loginScreenBackground.jpeg": "./static/media/loginScreenBackground.94e5756b639d9cd1c443.jpeg",
+    "static/media/netflix_logo.png": "./static/media/netflix_logo.774e8c1632ac9433608b.png",
+    "static/media/no1MovieToday.svg": "./static/media/no1MovieToday.d523ef437a399671091453c495a2b3cb.svg",
+    "index.html": "./index.html",
+    "main.fc3a7843.css.map": "./static/css/main.fc3a7843.css.map",
+    "main.90d752c7.js.map": "./static/js/main.90d752c7.js.map"
   },
   "entrypoints": [
-    "static/css/main.8c2b315b.css",
-    "static/js/main.aba4450c.js"
+    "static/css/main.fc3a7843.css",
+    "static/js/main.90d752c7.js"
   ]
 }
